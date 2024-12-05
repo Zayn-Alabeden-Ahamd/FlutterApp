@@ -11,6 +11,8 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -20,6 +22,8 @@ class MyApp extends StatelessWidget {
 }
 
 class UserListScreen extends StatefulWidget {
+  const UserListScreen({super.key});
+
   @override
   State<UserListScreen> createState() => _UserListScreenState();
 }
@@ -51,10 +55,10 @@ class _UserListScreenState extends State<UserListScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('User List'),
+        title: const Text('User List'),
       ),
       body: users.isEmpty
-          ? Center(
+          ? const Center(
               child:
                   CircularProgressIndicator()) // Show loader until data is loaded
           : ListView.builder(
