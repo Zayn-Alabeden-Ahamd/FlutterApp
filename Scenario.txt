@@ -1,0 +1,7 @@
+Initially, the user opens the application,and a login page appears.
+Then, he is entering his account information (username and password).
+After that, the system verifies this information.
+If the information is incorrect (there is no account with these
+information), the user is returned to the login page; 
+otherwise, the system retrieves the account, 
+and the login process is completed.
